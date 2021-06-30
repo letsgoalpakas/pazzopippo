@@ -8,7 +8,7 @@ function Pagamento(){
 
     const logout = () => {
         localStorage.clear();
-        window.location = "http://localhost:3000/";
+        window.location = "/";
       };
 
 
@@ -95,10 +95,10 @@ function Pagamento(){
                 if(json.auth){
                     if(json.result){
                         alert("Ordine completato con successo,  lo troverai nel tuo storico");
-                        window.location = "http://localhost:3000/main";
+                        window.location = "/main";
                     } else {
                         alert("Errore nella conferma dell'ordine, forse è stato prenotato recentemente");
-                        window.location = "http://localhost:3000/main";
+                        window.location = "/main";
                     }
                    
                     

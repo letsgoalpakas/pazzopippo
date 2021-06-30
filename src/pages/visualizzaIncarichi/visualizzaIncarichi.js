@@ -7,7 +7,7 @@ const Incarichi = () => {
     
     const logout = () => {
         localStorage.clear();
-        window.location = "http://localhost:3000/";
+        window.location = "/";
     }
 
     
@@ -86,7 +86,7 @@ const Incarichi = () => {
                     localStorage.setItem("occupato", risultato);
                     } else {
                         alert("Errore");
-                        window.location = "http://localhost:3000/visualizzaIncarichi";   
+                        window.location = "/visualizzaIncarichi";   
                     }
                     
                 } else {
@@ -99,22 +99,22 @@ const Incarichi = () => {
             if(ris.dipendente.occupato === false && (dipendente.ruolo === "Assistenza" || dipendente.ruolo === "assistenza") )
             {   
                 alert("Incarico accettato!");
-                window.location = "http://localhost:3000/visualizzaIncarichi";   
+                window.location = "/visualizzaIncarichi";   
                    
             }
             else if(ris.dipendente.occupato === true && (dipendente.ruolo !== "Assistenza" || dipendente.ruolo !== "assistenza"))
             {
-                window.location = "http://localhost:3000/notificadipendente";
+                window.location = "/notificadipendente";
             } 
             else {
                 alert("Errore nell'accettazione dell'incarico, riprova e controlla nella tua pagina di notifica");
-                window.location = "http://localhost:3000/visualizzaIncarichi";      
+                window.location = "/visualizzaIncarichi";      
             }
         })
     })
 } else {
     alert("Errore nell'accettazione dell'incarico, prova a visitare la pagina di notifica");
-    window.location = "http://localhost:3000/visualizzaIncarichi";   
+    window.location = "/visualizzaIncarichi";   
 }
 }
 
@@ -134,7 +134,7 @@ const Incarichi = () => {
                     localStorage.setItem("incarichi", ob);
                     } else {
                         alert("Errore nella ricezione degli incarichi");
-                        window.location = "http://localhost:3000/visualizzaIncarichi";
+                        window.location = "/visualizzaIncarichi";
                     }
                     
                 } else {

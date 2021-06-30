@@ -6,7 +6,7 @@ import { Jumbotron } from "reactstrap";
 function NotificaDipendente() {
   const logout = () => {
     localStorage.clear();
-    window.location = "http://localhost:3000/";
+    window.location = "/";
   };
 
   async function getProfile() {
@@ -37,10 +37,10 @@ function NotificaDipendente() {
             alert(
               "Incarico completato e notificato, puoi accettare nuovi incarichi"
             );
-            window.location = "http://localhost:3000/visualizzaIncarichi";
+            window.location = "/visualizzaIncarichi";
           } else {
             alert("Errore nella notifica riprova");
-            window.location = "http://localhost:3000/notificadipendente";
+            window.location = "/notificadipendente";
           }
         } else {
           alert("Sessione scaduta");

@@ -26,7 +26,7 @@ const Ordine = () => {
 
   const logout = () => {
     localStorage.clear();
-    window.location = "http://localhost:3000/";
+    window.location = "/";
   };
 
   async function getCatalogo() {
@@ -95,7 +95,7 @@ const Ordine = () => {
     localStorage.setItem("DataFine", df);
 
     if (!o.occupato) {
-      window.location = "http://localhost:3000/riepilogo";
+      window.location = "/riepilogo";
     } else {
       alert("Mezzo occupato nella data scelta");
     }

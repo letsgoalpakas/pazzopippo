@@ -6,11 +6,11 @@ import { Row, Col } from 'reactstrap';
 function PreOrdine(){
 
     const redirectToAutonomo = () => {
-        window.location = "http://localhost:3000/ordine";
+        window.location = "/ordine";
     }
 
     const redirectToTaxi = () => {
-        window.location = "http://localhost:3000/tassista";
+        window.location = "/tassista";
     }
     
     return (

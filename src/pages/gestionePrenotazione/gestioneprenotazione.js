@@ -11,7 +11,7 @@ function GestionePrenotazione() {
 
   const logout = () => {
     localStorage.clear();
-    window.location = "http://localhost:3000/";
+    window.location = "/";
   };
 
   const valida = () => {
@@ -148,12 +148,12 @@ function GestionePrenotazione() {
         if (json.auth) {
           if (json.result !== "modificato") {
             alert("Ordine modificato correttamente");
-            window.location = "http://localhost:3000/main";
+            window.location = "/main";
           } else {
             alert(
               "Ordine già modificato in precedenza, non è possibile rimodificarlo"
             );
-            window.location = "http://localhost:3000/main";
+            window.location = "/main";
           }
         } else {
           alert("sessione scaduta");

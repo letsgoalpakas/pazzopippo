@@ -89,7 +89,7 @@ function PreGestione() {
 
     localStorage.setItem("editable", obj);
 
-    window.location = "http://localhost:3000/gestioneprenotazione";
+    window.location = "/gestioneprenotazione";
   };
 
   window.onload = function () {

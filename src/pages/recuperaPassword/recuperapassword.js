@@ -36,7 +36,7 @@ function RecuperaPassword(){
                     
                     else {
                         alert("Errore nell'invio del codice! Ricompila il form!");
-                        window.location = "http://localhost:3000/recuperapassword";
+                        window.location = "/recuperapassword";
                       
                     }
                 })
@@ -74,10 +74,10 @@ function RecuperaPassword(){
                 .then((json)=>{
                     if(json.auth){
                         alert("Password modificata correttamente!");
-                        window.location = "http://localhost:3000/login";
+                        window.location = "/login";
                     } else {
                         alert("Modifica password non andata a buon fine, riprovare");
-                        window.location = "http://localhost:3000/recuperapassword";
+                        window.location = "/recuperapassword";
 
                     }
                 })

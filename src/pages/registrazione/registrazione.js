@@ -154,7 +154,7 @@ function Registrazione(){
         .then((json)=>{
           if(json.result){
             alert("Registrato correttamente, effettua il login.");
-            window.location = "http://localhost:3000/login";
+            window.location = "/login";
           } else {
             alert("Errore nella registrazione. riprova");
           }

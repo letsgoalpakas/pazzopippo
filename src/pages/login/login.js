@@ -72,9 +72,9 @@ function Login() {
                 alert("Password sbagliata");
               } else {
                 if (localStorage.getItem("who") === "QaWScfwXQk") {
-                  window.location = "http://localhost:3000/main";
+                  window.location = "/main";
                 } else {
-                  window.location = "http://localhost:3000/maindip";
+                  window.location = "/maindip";
                 }
               }
               // controlliamo se è un dipendente o un cliente
@@ -135,7 +135,7 @@ function Login() {
           </div>
           <div class="signup-link">
             Non hai un account?{" "}
-            <a href="http://localhost:3000/registrazione"> Registrati qua </a>
+            <a href="/registrazione"> Registrati qua </a>
           </div>
         </form>
       </div>

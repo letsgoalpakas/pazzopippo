@@ -7,7 +7,7 @@ import crypto from 'crypto';
 function Account() {
   const logout = () => {
     localStorage.clear();
-    window.location = "http://localhost:3000/";
+    window.location = "/";
   };
 
   const [password, setPassword] = useState("");
@@ -91,10 +91,10 @@ function Account() {
             let re = JSON.stringify(json.result);
             localStorage.setItem("profile", re);
             alert("Dati aggiornati con successo");
-            window.location = "http://localhost:3000/account";
+            window.location = "/account";
           } else {
             alert("errore nell'aggiornamento dei dati");
-            window.location = "http://localhost:3000/account";
+            window.location = "/account";
           }
         } else {
           alert("sessione scaduta");

@@ -18,7 +18,7 @@ import Image from "../assets/images/logo-remove.png";
 const NavDipendente = (props) => {
   const logout = () => {
     localStorage.clear();
-    window.location = "http://localhost:3000/";
+    window.location = "/";
   };
 
   const [isOpen, setIsOpen] = useState(false);

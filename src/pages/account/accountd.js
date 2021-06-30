@@ -10,7 +10,7 @@ function Account(){
 
     const logout = () => {
         localStorage.clear();
-        window.location = "http://localhost:3000/";
+        window.location = "/";
     }
 
     const [password, setPassword] = useState("");
@@ -91,10 +91,10 @@ function Account(){
                           let re = JSON.stringify(json.dipendente);
                            localStorage.setItem("profile", re);
                             alert("Dati aggiornati con successo");
-                            window.location = "http://localhost:3000/accountd";
+                            window.location = "/accountd";
                         } else {
                             alert("Errore nell'aggiornamento dei dati");
-                            window.location = "http://localhost:3000/accountd";
+                            window.location = "/accountd";
                         }
                     } else {
                         alert("Sessione scaduta");

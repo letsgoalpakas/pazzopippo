@@ -11,7 +11,7 @@ function Storico(){
 
     const logout = () => {
         localStorage.clear();
-        window.location = "http://localhost:3000/";
+        window.location = "/";
     }
 
     async function getProfile(){

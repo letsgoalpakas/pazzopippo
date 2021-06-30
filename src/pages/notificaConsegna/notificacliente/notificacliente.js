@@ -10,7 +10,7 @@ function NotificaCliente() {
 
   const logout = () => {
     localStorage.clear();
-    window.location = "http://localhost:3000/";
+    window.location = "/";
   };
 
   const notifica = () => {
@@ -41,7 +41,7 @@ function NotificaCliente() {
         if (json.auth) {
           if (json.result) {
             alert("Consegna notificata con successo");
-            window.location = "http://localhost:3000/notificacliente";
+            window.location = "/notificacliente";
           } else {
             alert("Errore, riprovare");
           }

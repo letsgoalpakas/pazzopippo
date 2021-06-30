@@ -36,10 +36,10 @@ function Assistenza() {
         res.json().then((json) => {
           if (json.result) {
             alert("Controlli la sua email, a breve le risponderemo!");
-            window.location = "http://localhost:3000/assistenza";
+            window.location = "/assistenza";
           } else {
             alert("Errore nella richiesta d'assistenza. Riprova!");
-            window.location = "http://localhost:3000/assistenza";
+            window.location = "/assistenza";
           }
         });
       });

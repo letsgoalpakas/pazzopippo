@@ -47,7 +47,7 @@ const Tassista = () => {
             alert("Ordine inviato, da confermare");
             let ob = JSON.stringify(json.scelta);
             localStorage.setItem("scelta", ob);
-            window.location = "http://localhost:3000/main";
+            window.location = "/main";
           } else {
             alert("Errore nella nella conferma dell'ordine. Riprova!");
           }

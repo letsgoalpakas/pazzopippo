@@ -8,16 +8,16 @@ function Riepilogo(){
 
   const logout = () => {
     localStorage.clear();
-    window.location = "http://localhost:3000/";
+    window.location = "/";
 }
 
   const backToOrdine = () => {
-    window.location = "http://localhost:3000/ordine";
+    window.location = "/ordine";
   }
 
   const redirectToPagamento = () => {
 
-    window.location = "http://localhost:3000/pagamento";
+    window.location = "/pagamento";
           
   }
 
@@ -219,7 +219,7 @@ function Riepilogo(){
             else {
               
               alert("Il mezzo è stato prenotato durante il tuo tentativo, ci dispiace");
-              window.location = "http://localhost:3000/ordine";
+              window.location = "/ordine";
               
             }
           } else {
